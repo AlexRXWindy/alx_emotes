@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Box;
+    src: url(./ios.ttf);
+}
+
+body {
+    user-select: none;
+    overflow: hidden;
+    font-family: Box;
+    font-weight: 550;
+}
+
+.container {
+    position: absolute;
+    background-color: #0f0f0fd3;
+    box-shadow: 0 0 .3vw #0f0f0fec;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: .3vw;
+    width: 19.0vw;
+    height: 30vw;
+    left: 84vw;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    padding: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.searchbar{
+    background: rgba(194, 191, 191, 0.897) url("search.svg") no-repeat 15px center;
+    width: 17.2vw;
+    height: 1.5vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(18, 18, 18, 0.719);
+    border: none;
+    box-shadow: rgba(33, 33, 33, 0.25) 0px 2px 5px -1px;
+    background-size: 15px 15px;
+    padding-left: 1.9vw;
+    padding-top: .2vw;
+    outline: none;
+}
+
+.categories {
+    background-color: rgba(241, 241, 241, 0.568); 
+    border-radius: 4px;
+    width: 100%;
+    height: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .9vw;
+}
+
+.cat {
+    background-color: #0f0f0f00;
+    box-shadow: 0 0 .3vw #0f0f0f00;
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 6vw;
+    height: 1vw;
+    border-radius: .4vw;
+    display: flex;                                                                  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat:hover{
+    filter: brightness(0.3);
+    color: black;
+    cursor: pointer;
+}
+
+.emotes {
+    /* background-color: rgb(126, 126, 126); */
+    height: 100%;
+    border-radius: .3vw;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 1%;
+    flex-wrap: wrap;
+    -ms-overflow-style: none;  
+    justify-content: flex-start;
+    overflow-y:scroll;
+    flex:1 1 auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.emote {
+    background: linear-gradient(-45deg, #ffffffbd, #ffffffbe); /* Color blanco para el efecto de neón */
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0 0 .3vw #0f0f0fec;
+    border-radius: 0.1vw;
+    width: 9.0vw;
+    height: 3.2vw;
+}
+
+.emote:hover {
+    background-color: rgb(213, 214, 214);
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+.emote-title {
+    font-size: .8vw;
+    margin: .4vw;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.emote-command {
+    font-size: .8vw;
+    margin: .4vw;
+    color: rgb(0, 0, 0);
+    margin-top: .2vw;
+    font-weight: 100;
+}
+.search-icon {
+    margin-left: .3vw;
+    font-size: 1vw;
+    color: rgb(218, 218, 218);
+}
+.search-icon:hover {
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.icono-cat {
+    font-size: 0.7vw;
+    background-color: #0f0f0f00;
+    color: rgba(19, 19, 19, 0.63);
+}
+::-webkit-scrollbar{
+    position:absolute;
+    width:.3vw;
+    height:.10vw;
+    left:-.5vw;
+    transition: .5s;
+}
+::-webkit-scrollbar-button{
+    width:0;
+    height:0;
+}
+::-webkit-scrollbar-thumb{
+    background:rgba(194, 191, 191, 0.897);
+    border-radius:20vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:rgba(156, 156, 156, 0.897);
+    cursor: pointer;
+} 
+::-webkit-scrollbar-corner{
+    background: none;
+}
+
+@keyframes neon {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
