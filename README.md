@@ -1,28 +1,30 @@
-English
+**English**
 :arrow_right: It is a complete redesign of rpemotes, it also uses part of Barikelo’s code, this script is really made for those servers that are looking for a different panel than the rpemotes and with player movement.
 
-Español
+**Español**
 :arrow_right: Es un resiseño entero del rpemotes, tambien usa parte de codigo de barikelo, este script esta realmente echo para aquellos servidores que busquen un panel diferente al del rpemotes.
 
-Features
+**Features**
 
-Player movement while having the animations.
+* Player movement while having the animations.
 
-The player can drive while it is open.
+* The player can drive while it is open.
 
-More than +3000 emotes.
+* More than +3000 emotes.
 
-Minimalist design
+* Minimalist design
 
-Added most rpemotes options
+* Added most rpemotes options
 
-Fully editable
+* Fully editable
 
-Framework
+**Framework**
 
-ESX
-QBCORE
-:heart: Credits:
+* ESX
+* QBCORE
+
+
+:heart: **Credits:**
 
 BKemotes
 
